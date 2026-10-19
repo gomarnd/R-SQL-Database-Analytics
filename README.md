@@ -1,27 +1,27 @@
 # R-SQL-Database-Analytics
-# 🗄️ Relational Database Management & SQL Analytics in R
+#  Relational Database Management & SQL Analytics in R
 
-## 🎯 Project Overview
+# Project Overview
 This repository demonstrates the integration of **SQL relational database querying** within the **R** statistical computing environment using `DBI` and `RSQLite`. It bridges data engineering and marketing analytics by showcasing how to build in-memory relational schemas, execute complex join operations, and aggregate cross-channel transactional data directly from structured SQL engines.
 
 ---
 
-## 🛠️ Core Database Concepts & Methods Applied
+# Core Database Concepts & Methods Applied
 
-### 1. In-Memory Database Schema & Table Construction
+## 1. In-Memory Database Schema & Table Construction
 - **Engine Setup:** Instantiating an in-memory SQLite database connection using `dbConnect(RSQLite::SQLite(), ":memory:")`.
 - **Data Ingestion:** Programmatically populating database tables from structured datasets using `dbWriteTable()`.
 
-### 2. SQL Query Execution & Relational Operations
+## 2. SQL Query Execution & Relational Operations
 - **Single-Table Extraction:** Filtering and sorting records using `SELECT`, `WHERE`, and `ORDER BY`.
 - **Cross-Table Joins (`INNER JOIN`):** Unifying customer demographic tables with campaign performance tables via common primary/foreign key attributes (`Customer_ID`, `Campaign_ID`).
 - **Aggregations & Grouping:** Calculating total spend and regional revenues using `GROUP BY`, `SUM()`, `AVG()`, and `COUNT()`.
 
 ---
 
-## 💻 R & SQL Code Implementation
+# R & SQL Code Implementation
 
-### Complete RSQLite Database Pipeline
+# Complete RSQLite Database Pipeline
 ```R
 library(DBI)
 library(RSQLite)
